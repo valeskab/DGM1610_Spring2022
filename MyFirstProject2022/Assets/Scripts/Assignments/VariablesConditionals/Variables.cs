@@ -14,6 +14,7 @@ public string loginName = "Bob2345"; // String are alpha numeric text contained 
 
 public int health;
 public float lives = 10f;
+public float speed;
 
 
 
