@@ -35,5 +35,10 @@ public class IfStatements : MonoBehaviour
             Debug.Log("Wrong color!");
         }
         */
+
+        if(weather == Rain)
+        {
+            Debug.Log("The weather is bad, you should wear a coat!");
+        }
     }
 }

@@ -8,8 +8,8 @@ public class VariablesIfStatmentsHW : MonoBehaviour
 //Homework
 
 public int health;
-public float lives = 10f;
-public float speed = 100;
+public int score;
+public float speed = 2.5f;
 public string favFood = "Sushi";
 public bool youArehappy = true;
 
@@ -19,6 +19,10 @@ public bool youArehappy = true;
         health = 100;
         Debug.Log("Health = "+ health);
 
+        score = 10;
+        Debug.Log("Score =" + score);
+
+
     }
 
     // Update is called once per frame
@@ -26,11 +30,15 @@ public bool youArehappy = true;
     {
         if (favFood == "Sushi")
         {
-            print ("Yum!");
+            Debug.Log("Yum!");
         }
         if (youArehappy == true)
         {
-            print("You are happy!!!");
+            Debug.Log("You are happy!!!");
+        }
+        else if(youArehappy == false)
+        {
+            Debug.Log("You are sad, feel better soon!");
         }
     }   
 
