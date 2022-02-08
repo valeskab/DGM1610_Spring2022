@@ -10,14 +10,6 @@ public float change = 0.75f; // Floating point number or decimal 3.15, 105.34, -
 public bool isDay = true; //Booleans are true or false
 public string loginName = "Bob2345"; // String are alpha numeric text contained it quotation marks
 
-//Homework
-
-public int health;
-public float lives = 10f;
-public float speed;
-
-
-
     // Start is called before the first frame update
     void Start()
     {
