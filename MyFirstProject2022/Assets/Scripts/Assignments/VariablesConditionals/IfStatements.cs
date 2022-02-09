@@ -6,7 +6,10 @@ public class IfStatements : MonoBehaviour
 {
     // public string lightColor;
 
-    public string weather;
+    // public string weather;
+
+    public string hairColor;
+    public int age;
 
     // Start is called before the first frame update
     void Start()
@@ -36,9 +39,25 @@ public class IfStatements : MonoBehaviour
         }
         */
 
-        if(weather == Rain)
+        /*
+
+        if(weather == "Rain" || weather == "Snow")
         {
             Debug.Log("The weather is bad, you should wear a coat!");
         }
+        else if(weather == "Sunny"|| weather == "Partially Cloudy")
+        {
+            Debug.Log("You do not need a coat!");
+        }
+        */
+        if(hairColor == "Red" && age == 6)
+        {
+            Debug.Log("You can ride the Merry go Round");
+        }
+        else if(hairColor == "Blonde" && age == 100)
+        {
+            Debug.Log("You are old enough to fly");
+        }
+
     }
 }
