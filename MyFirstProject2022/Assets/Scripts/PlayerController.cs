@@ -19,8 +19,10 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         hInput = Input.GetAxis("Horizontal");
+        fInput = Input.GetAxis("Vertical");
+        
         // Makes the player move forward
-        transform.Translate(Vector3.forward * Time.deltaTime * speed);
-        transform. Translate(Vector3.right * Time.deltaTime * turnSpeed);
+        transform.Translate(Vector3.forward * Time.deltaTime * speed * fInput);
+        transform.Translate(Vector3.right * Time.deltaTime * turnSpeed * hInput);
     }
 }
