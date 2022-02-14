@@ -10,7 +10,7 @@ public class CameraFollow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-         // Follow Players position, placing the script in void update works fine, no glitches.
+         // Follow Players position, fixed glitch by using void update.
        transform.position = player.transform.position + offset;
     }
 }
