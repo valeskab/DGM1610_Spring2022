@@ -123,6 +123,46 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &302587048 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7106277921430993309, guid: 6d32ae842baf7784490f1037504e57d6, type: 3}
+  m_PrefabInstance: {fileID: 7106277921665410357}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &302587053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302587048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94332de7796c52944ac56511b009417f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreToGive: 100
+  clicksToPop: 3
+  scaleToIncrease: 0.1
+--- !u!1 &318601748 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2356260772828018851, guid: c9df35d24eb6d514e91bb75534ab2754, type: 3}
+  m_PrefabInstance: {fileID: 2356260772522525367}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &318601753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 318601748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94332de7796c52944ac56511b009417f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreToGive: 100
+  clicksToPop: 3
+  scaleToIncrease: 0.1
 --- !u!1 &671156892
 GameObject:
   m_ObjectHideFlags: 0
@@ -207,6 +247,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!1 &716932558 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6446393808319503102, guid: a760b484508c49f4e9a63d7d5334c76d, type: 3}
+  m_PrefabInstance: {fileID: 6446393807890210608}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &716932563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 716932558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94332de7796c52944ac56511b009417f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreToGive: 100
+  clicksToPop: 3
+  scaleToIncrease: 0.1
 --- !u!1 &1335001672
 GameObject:
   m_ObjectHideFlags: 0
