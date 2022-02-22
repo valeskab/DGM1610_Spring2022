@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Arrays : MonoBehaviour
 {
+    //Arrays Class Lesson Sample
     public string[] friendNames = {"Bob", "Jessica", "Jody", "Arthur", "Randall", "Todd", "Becky"};
     public int[] numbers = {23,34,56,67,78,97,45,10};
     //                            { 0, 1, 2, 3, 4, 5, 6}

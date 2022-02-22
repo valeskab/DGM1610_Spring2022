@@ -4,17 +4,23 @@ using UnityEngine;
 
 public class ArraysHW : MonoBehaviour
 {
-    public string[] makeupBag = {"Mirror", "Lipstick", "Mascara", "Blush", "Foundation", "Concealer", "Brushes", "Powder", "Eyeliner", "Eyeshadow"};
-    //                            { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+    //Arrays Homework (10 Arrays)
+     public string[] friendNames = {"Bob", "Jessica", "Jody", "Arthur", "Randall", "Todd", "Becky"};
+    public int[] numbers = {23,34,56,67,78,97,45,10};
+    public string[] makeupBag = {"Mirror", "Lipstick", "Mascara", "Blush", "Foundation", "Concealer", "Brushes", "Powder", "Eyeliner", "Eyeshadow"}; 
+    public string[] gameConsoles = {"GameCube", "DreamCast", "GameBoy", "NintendoDS", "PlayStation", "xBox", "PSP"};
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        /*
+        Debug.Log("Former friend"+ friendNames[0]);
+        Debug.Log(friendNames[3]+"Says Hi as he walks to class");
+        friendNames[0] = "Veronica";
+        Debug.Log("New friend"+ friendNames[0]);
+        */
+        foreach(string makeupBag in makeupBag)
+        {
+            print(makeupBag);
+        }
     }
 }
