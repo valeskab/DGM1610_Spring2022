@@ -18,6 +18,10 @@ public class ArraysHW : MonoBehaviour
         friendNames[0] = "Veronica";
         Debug.Log("New friend"+ friendNames[0]);
         */
+        foreach(int numbers in numbers)
+        {
+            print(numbers);
+        }
         foreach(string makeupBag in makeupBag)
         {
             print(makeupBag);
