@@ -9,6 +9,7 @@ public class ArraysHW : MonoBehaviour
     public int[] numbers = {23,34,56,67,78,97,45,10};
     public string[] makeupBag = {"Mirror", "Lipstick", "Mascara", "Blush", "Foundation", "Concealer", "Brushes", "Powder", "Eyeliner", "Eyeshadow"}; 
     public string[] gameConsoles = {"GameCube", "DreamCast", "GameBoy", "NintendoDS", "PlayStation", "xBox", "PSP"};
+    public string[] farmAnimals = {"Cow", "Horse", "Pig", "Sheep", "Chicken", "Turkey", "Goat"};
     // Start is called before the first frame update
     void Start()
     {
