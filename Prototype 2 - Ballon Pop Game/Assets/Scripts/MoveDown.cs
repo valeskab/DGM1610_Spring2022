@@ -14,6 +14,6 @@ public class MoveDown : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(0,-moveSpeed * Time.deltaTime,0);
+        transform.Translate(Vector3.down * Time.deltaTime,0);
     }
 }
