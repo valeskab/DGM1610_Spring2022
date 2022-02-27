@@ -10,6 +10,7 @@ public class ArraysHW : MonoBehaviour
     public string[] makeupBag = {"Mirror", "Lipstick", "Mascara", "Blush", "Foundation", "Concealer", "Brushes", "Powder", "Eyeliner", "Eyeshadow"}; 
     public string[] gameConsoles = {"GameCube", "DreamCast", "GameBoy", "NintendoDS", "PlayStation", "xBox", "PSP"};
     public string[] farmAnimals = {"Cow", "Horse", "Pig", "Sheep", "Chicken", "Turkey", "Goat"};
+    public string[] inventory = {"Health Kit", "Shotgun Ammo", "Granade", "Shield"};
     // Start is called before the first frame update
     void Start()
     {
