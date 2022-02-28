@@ -129,6 +129,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 1
+  lowerBound: -10
+  scoreManager: {fileID: 0}
 --- !u!1 &6446393809761726301
 GameObject:
   m_ObjectHideFlags: 0

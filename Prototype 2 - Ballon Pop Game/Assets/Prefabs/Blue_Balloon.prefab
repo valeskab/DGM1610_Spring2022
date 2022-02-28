@@ -325,3 +325,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 1
+  lowerBound: -10
+  scoreManager: {fileID: 0}
