@@ -13,7 +13,7 @@ public class ArraysHW : MonoBehaviour
     public string[] inventory = {"Health Kit", "Shotgun Ammo", "Granade", "Shield"};
     public int[] playerId = {358, 764, 555, 530, 927, 214};
     public string[] favoriteGames = {"Pokemon", "Fire Emblem", "Final Fantasy", "Valorant", "Apex Legends"};
-    public string[] futureDestinations = {"Peru", "United States", "Japan", "Mexico", "Croatia"};
+    public string[] destinations = {"Peru", "United States", "Japan", "Mexico", "Croatia"};
     public string[] colors = {"Red", "Orange", "Yellow", "Green", "Blue", "Indigo", "Violet"};
     // Start is called before the first frame update
     void Start()
@@ -23,17 +23,18 @@ public class ArraysHW : MonoBehaviour
         Debug.Log(friendNames[3]+"Says Hi as he walks to class");
         friendNames[0] = "Veronica";
         Debug.Log("New friend"+ friendNames[0]);
-        */
-        /*
+        
+        Debug.Log("The next destination is"+ destinations[2]);
 
-        */
         foreach(int numbers in numbers)
         {
             print(numbers);
         }
-        foreach(string makeupBag in makeupBag)
+        */
+        
+        foreach(string favoriteGames in favoriteGames)
         {
-            print(makeupBag);
+            print(favoriteGames);
         }
     }
 }
