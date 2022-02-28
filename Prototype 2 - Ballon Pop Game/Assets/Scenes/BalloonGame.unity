@@ -453,6 +453,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1129497009}
   - component: {fileID: 1129497008}
+  - component: {fileID: 1129497010}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -496,6 +497,73 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1129497010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1129497007}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dcc84f4295fc9f47b1e37f44ddae714, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  friendNames:
+  - Bob
+  - Jessica
+  - Jody
+  - Arthur
+  - Randall
+  - Todd
+  - Becky
+  numbers: 170000002200000038000000430000004e000000610000002d0000000a000000
+  makeupBag:
+  - Mirror
+  - Lipstick
+  - Mascara
+  - Blush
+  - Foundation
+  - Concealer
+  - Brushes
+  - Powder
+  - Eyeliner
+  - Eyeshadow
+  gameConsoles:
+  - GameCube
+  - DreamCast
+  - GameBoy
+  - NintendoDS
+  - PlayStation
+  - xBox
+  - PSP
+  farmAnimals:
+  - Cow
+  - Horse
+  - Pig
+  - Sheep
+  - Chicken
+  - Turkey
+  - Goat
+  inventory:
+  - Health Kit
+  - Shotgun Ammo
+  - Granade
+  - Shield
+  playerId: 66010000fc0200002b020000120200009f030000d6000000
+  favoriteGames:
+  - Pokemon
+  - Fire Emblem
+  - Final Fantasy
+  - Valorant
+  - Apex Legends
+  futureDestinations:
+  - Peru
+  - United States
+  - Japan
+  - Mexico
+  - Croatia
+  colors: []
 --- !u!1 &1179286832
 GameObject:
   m_ObjectHideFlags: 0
