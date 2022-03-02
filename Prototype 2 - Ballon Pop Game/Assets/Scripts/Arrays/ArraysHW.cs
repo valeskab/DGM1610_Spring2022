@@ -26,6 +26,9 @@ public class ArraysHW : MonoBehaviour
         
         Debug.Log("The next destination is"+ destinations[2]);
 
+        Debug.Log("My favorite color is" + colors[5]);
+        
+
         foreach(int numbers in numbers)
         {
             print(numbers);
