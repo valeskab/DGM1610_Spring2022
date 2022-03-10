@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Movement : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 5f; // Speed at which the player will move
     private Rigidbody2D rb; // Store the referenced 2D rigidbody
@@ -23,7 +23,7 @@ public class Movement : MonoBehaviour
 
     // Set number of calls per frame
 
-    FixedUpdate()
+    void FixedUpdate()
     {
         // Apply physics and move the character
         rb.MovePosition(rb.position + movement * moveSpeed * Time.deltaTime);
