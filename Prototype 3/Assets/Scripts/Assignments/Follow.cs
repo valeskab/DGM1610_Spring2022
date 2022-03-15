@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class Follow : MonoBehaviour
 {
+
+    public float speed;
+    public float stopDistance;
+    private Transform target;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        target = GameObject.FindGameObjectsWithTag("Player").GetComponent<Transform>();
     }
 
     // Update is called once per frame
