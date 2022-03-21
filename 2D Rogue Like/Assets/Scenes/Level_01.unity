@@ -479,6 +479,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dec4373f08fed7469217b5f4d9fb6fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 2
+  stopDistance: 0
+  retreatDistance: 0
+  startDelay: 0
+  projectile: {fileID: 0}
 --- !u!61 &1806307311
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -696,7 +701,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2675d4f7292a1b44e85a0da0c6a23c66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 1
   stopDistance: 1.25
 --- !u!1001 &5068425011410122013
 PrefabInstance:
