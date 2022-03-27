@@ -25,7 +25,7 @@ public class MoveAndShoot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Vector2.Distance(transform.position, target.position) > stopDistance)
+        if(Vector2.Distance(transform.position, target.position) > stopDistance) // if distance between player is greater than stop distance, itll continue to move
         {
             transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
 
@@ -41,6 +41,7 @@ public class MoveAndShoot : MonoBehaviour
         if(shotDelay <= 0)
         {
             Instantiate(projectile, transform.position, Quaternion.identity);
+            shotDelay = startDelay;
         }
         else
         {
