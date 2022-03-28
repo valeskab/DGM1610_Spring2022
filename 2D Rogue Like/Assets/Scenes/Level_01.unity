@@ -364,10 +364,10 @@ MonoBehaviour:
   speed: 0
   startWaitTime: 0
   StartPoint: {fileID: 1213306811}
-  minX: 0
-  maxX: 0
-  minY: 0
-  maxY: 0
+  minX: -10
+  maxX: 10
+  minY: -3
+  maxY: 3
 --- !u!212 &1140924411
 SpriteRenderer:
   m_ObjectHideFlags: 0
