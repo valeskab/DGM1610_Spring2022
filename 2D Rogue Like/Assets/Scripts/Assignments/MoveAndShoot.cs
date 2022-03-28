@@ -32,7 +32,7 @@ public class MoveAndShoot : MonoBehaviour
         }
         else if(Vector2.Distance(transform.position, target.position) < stopDistance && Vector2.Distance(transform.position, target.position) > retreatDistance)
         {
-            transform.position = this.transform.position;
+            transform.position = this.transform.position; //if distance is less than stop distance and greater than retreatdistance, keep going
         }
         else if(Vector2.Distance(transform.position, target.position) < retreatDistance)
         {
@@ -41,7 +41,7 @@ public class MoveAndShoot : MonoBehaviour
         if(shotDelay <= 0)
         {
             Instantiate(projectile, transform.position, Quaternion.identity);
-            shotDelay = startDelay;
+            shotDelay = startDelay; // delay system for shooting
         }
         else
         {
