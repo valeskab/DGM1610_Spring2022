@@ -288,7 +288,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d4e6f8b835cbc543b433ba411953a42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  curHP: 0
+  maxHP: 0
+  damage: 0
   moveSpeed: 5
+  attackRange: 0
+  attackRate: 0
 --- !u!50 &704843830
 Rigidbody2D:
   serializedVersion: 4
@@ -342,7 +347,7 @@ GameObject:
   - component: {fileID: 1140924412}
   - component: {fileID: 1140924411}
   - component: {fileID: 1140924410}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Enemy_Guard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -595,7 +600,7 @@ GameObject:
   - component: {fileID: 1806307312}
   - component: {fileID: 1806307311}
   - component: {fileID: 1806307310}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Enemy_MoveShoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -724,7 +729,7 @@ GameObject:
   - component: {fileID: 2135666614}
   - component: {fileID: 2135666617}
   - component: {fileID: 2135666618}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Enemy_Follow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
