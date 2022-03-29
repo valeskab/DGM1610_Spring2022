@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
     [Header ("Player Health")]
     public int curHP;
     public int maxHP;
-    public int damage;
+    
 
     [Header ("Player Movement")]
     public float moveSpeed = 5f; // Speed at which the player will move
@@ -19,6 +19,8 @@ public class PlayerController : MonoBehaviour
     public float attackRange; // Range at which the player can attack
     public float attackRate;
     private float lastAttackTime;
+    public int damage; // Damage ammount dealt to enemy
+    public LayerMask enemyLayer;
 
 
     // Start is called before the first frame update
@@ -42,4 +44,22 @@ public class PlayerController : MonoBehaviour
         rb.MovePosition(rb.position + movement * moveSpeed * Time.deltaTime);
 
     }
+
+    void Attack()
+    {
+        lastAttackTime = Time.time;
+        // Raycast using the enemyLayer
+
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, facingDirection, attackRange, enemyLayer);
+
+        if(hit.collider != null)
+        {
+            hit.collider.GetComponent<Enemy>()?.TakeDamage(damage);
+        }
+
+    }
+     void Die()
+        {
+            Debug.Log("Player has been defeated!");
+        }
 }
