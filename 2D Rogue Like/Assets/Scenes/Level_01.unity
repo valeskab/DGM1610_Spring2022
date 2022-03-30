@@ -288,12 +288,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d4e6f8b835cbc543b433ba411953a42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  curHP: 0
-  maxHP: 0
-  damage: 0
+  curHP: 10
+  maxHP: 10
   moveSpeed: 5
   attackRange: 0
   attackRate: 0
+  damage: 0
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!50 &704843830
 Rigidbody2D:
   serializedVersion: 4
@@ -366,8 +369,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd41133e2d354c44b93f6cd092f11124, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
-  startWaitTime: 0
+  speed: 5
+  startWaitTime: 1
   StartPoint: {fileID: 1213306811}
   minX: -10
   maxX: 10

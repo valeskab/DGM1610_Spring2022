@@ -45,6 +45,21 @@ public class PlayerController : MonoBehaviour
         // Apply physics and move the character
         rb.MovePosition(rb.position + movement * moveSpeed * Time.deltaTime);
 
+        UpdateDirection();
+
+    }
+
+    void UpdateDirection()
+    {
+        Vector2 vel = new Vector2(movement.x,movement.y); // vel is short for velocity, we dont want to override other functions
+
+        if(vel.magnitude != 0)
+        {
+            direction = vel;
+        }
+
+        rb.velocity = vel * moveSpeed;
+
     }
 
     void Attack()
@@ -57,6 +72,16 @@ public class PlayerController : MonoBehaviour
         if(hit.collider != null)
         {
             hit.collider.GetComponent<Enemy>()?.TakeDamage(damage);
+        }
+
+    }
+    public void TakeDamage(int damage)
+    {
+        curHP -= damage;
+
+        if(curHP <= 0)
+        {
+            Die();
         }
 
     }
