@@ -12,7 +12,9 @@ public class PlayerController : MonoBehaviour
     [Header ("Player Movement")]
     public float moveSpeed = 5f; // Speed at which the player will move
     private Rigidbody2D rb; // Store the referenced 2D rigidbody
-    Vector2 movement; //Store the players x,y position movement
+    private Vector2 movement; //Store the players x,y position movement
+
+    private Vector2 direction;
 
     [Header ("Player Combat")]
 
@@ -50,7 +52,7 @@ public class PlayerController : MonoBehaviour
         lastAttackTime = Time.time;
         // Raycast using the enemyLayer
 
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, facingDirection, attackRange, enemyLayer);
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, attackRange, enemyLayer);
 
         if(hit.collider != null)
         {
