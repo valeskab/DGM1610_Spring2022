@@ -36,6 +36,13 @@ public class PlayerController : MonoBehaviour
     {
         movement.x = Input.GetAxis("Horizontal"); // Input for left right movement
         movement.y = Input.GetAxis("Vertical"); // Input for Up Down movement
+
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            if(Time.time - lastAttackTime >= attackRate)
+              Attack();
+        
+        }
     }
 
     // Set number of calls per frame
