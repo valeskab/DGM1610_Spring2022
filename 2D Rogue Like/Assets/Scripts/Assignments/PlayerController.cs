@@ -18,10 +18,10 @@ public class PlayerController : MonoBehaviour
 
     [Header ("Player Combat")]
 
+    public int damage; // Damage ammount dealt to enemy
     public float attackRange; // Range at which the player can attack
     public float attackRate;
     private float lastAttackTime;
-    public int damage; // Damage ammount dealt to enemy
     public LayerMask enemyLayer;
 
 
