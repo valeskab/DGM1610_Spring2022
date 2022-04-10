@@ -9,7 +9,7 @@ public class Enums : MonoBehaviour
     enum CarModel {Alero, Cruze, Tacoma, Mustang, Miata, Viper};
     enum HighFashion {Gucci, Prada, Louisvouitton, Tiffany, Balenciaga, Channel, Dior}
     enum GameCompanies {Nintendo, Microsoft, Sony, Ubisoft, EA, Activision, SquareEnix}
-    
+    enum CoffeeDrinks { }
     // Start is called before the first frame update
     void Start()
     {
