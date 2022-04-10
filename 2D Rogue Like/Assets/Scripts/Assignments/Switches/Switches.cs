@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class Switches : MonoBehaviour
 {
-    public string npc;
+    public string npcConv;
 
-    if(npc == "Money for a poor soul")
+    Start()
     {
-        if(playerSays == "no")
+        switch(npcConv)
         {
-
+            case "Hello":
+            print
         }
-        else
     }
 }
