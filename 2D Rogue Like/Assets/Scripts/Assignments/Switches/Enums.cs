@@ -7,13 +7,13 @@ public class Enums : MonoBehaviour
     enum Color {blue, red, yellow, green, orange, purple};
     enum CarMake {Oldsmobile, Chevrolet, Ford, Mazda, Toyota, Dodge}
     enum CarModel {Alero, Cruze, Tacoma, Mustang, Miata, Viper};
-    enum HighFashion {Gucci, Prada, Louisvouitton, Tiffany, Balenciaga, Channel, Dior}
-    enum GameCompanies {Nintendo, Microsoft, Capcom, Ubisoft, EA, Activision, SquareEnix}
-    enum PopularGames {Mario, Minecraft, Sonic, JustDance, Fifa, Overwatch, FinalFantasy}
+    enum GameCompanies {Nintendo, Riot, Capcom, Ubisoft, EA, Activision, SquareEnix}
+    enum PopularGames {Mario, LeagueOfLegends, Sonic, JustDance, Fifa, Overwatch, FinalFantasy}
     enum CoffeeShops { Starbucks, DutchBros, BeansAndBrews, Beanys, GrindersCoffee, TheInsomniac}
     enum CoffeeDrinks {Capuccino, Expresso, Latte, Macchiato, Americano, Frappe, Mocha}
     enum Months {January, Febuary, March, April, May, June, July, August, September, October, November, December}
     enum Seasons { Summer, Winter, Fall, Spring}
+    enum Holidays {Christmas, Easter, Halloween, Thanksgiving, SpringBreak}
     // Start is called before the first frame update
     void Start()
     {
@@ -33,11 +33,16 @@ public class Enums : MonoBehaviour
         // print("Car Manufacture:" + make + "Model:" + model);
 
         /* 
+
+        GameCompanies publisher;
+        publisher = GameCompanies.Nintendo;
         
-        HighFashion brand;
-        brand = HighFashion.Channel;
-        
-        print(brand);
+        print(publisher);
+
+
+        GameCompanies company;
+
+        PopularGames vidgames;
 
         */
 
@@ -63,5 +68,29 @@ public class Enums : MonoBehaviour
         {
             print("There is no recall notice for your behicle make and model");
         }
+
     }
+
+    void Recall(GameCompanies company, PopularGames vidgames)
+    {
+        if(company == GameCompanies.SquareEnix && vidgames == PopularGames.FinalFantasy)
+        {
+            print("Final Fantasy is an amazing video game series");
+        }
+        else if(company == GameCompanies.Riot && vidgames == PopularGames.LeagueOfLegends)
+        {
+            print("Touch some grass bro");
+        }
+        else;
+        {
+            print("Cool");
+        }
+    }
+
+    
+
+
+
+    
+    
 }
