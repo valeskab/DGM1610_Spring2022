@@ -8,8 +8,12 @@ public class Enums : MonoBehaviour
     enum CarMake {Oldsmobile, Chevrolet, Ford, Mazda, Toyota, Dodge}
     enum CarModel {Alero, Cruze, Tacoma, Mustang, Miata, Viper};
     enum HighFashion {Gucci, Prada, Louisvouitton, Tiffany, Balenciaga, Channel, Dior}
-    enum GameCompanies {Nintendo, Microsoft, Sony, Ubisoft, EA, Activision, SquareEnix}
-    enum CoffeeDrinks { }
+    enum GameCompanies {Nintendo, Microsoft, Capcom, Ubisoft, EA, Activision, SquareEnix}
+    enum PopularGames {Mario, Minecraft, Sonic, JustDance, Fifa, Overwatch, FinalFantasy}
+    enum CoffeeShops { Starbucks, DutchBros, BeansAndBrews, Beanys, GrindersCoffee, TheInsomniac}
+    enum CoffeeDrinks {Capuccino, Expresso, Latte, Macchiato, Americano, Frappe, Mocha}
+    enum Months {January, Febuary, March, April, May, June, July, August, September, October, November, December}
+    enum Seasons { Summer, Winter, Fall, Spring}
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +31,15 @@ public class Enums : MonoBehaviour
         model = CarModel.Viper;
 
         // print("Car Manufacture:" + make + "Model:" + model);
+
+        /* 
+        
+        HighFashion brand;
+        brand = HighFashion.Channel;
+        
+        print(brand);
+
+        */
 
         Recall(CarMake.Mazda, CarModel.Miata);
     }
