@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8816927938107869088}
   - component: {fileID: 8816927938107869103}
   - component: {fileID: 8816927938107869100}
+  - component: {fileID: 3410156281529039030}
   m_Layer: 6
   m_Name: Enemy_Follow
   m_TagString: Untagged
@@ -126,3 +127,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   stopDistance: 1.25
+--- !u!114 &3410156281529039030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8816927938107869091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0636181067e837741ac92686b9752c83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curHP: 1
+  maxHP: 1
+  attackRange: 0.5
+  damage: 1
+  attackRate: 2
+  player: {fileID: 0}
+  lootDrop: {fileID: 7199529313164762176, guid: e47f367957e82714db41a8e23bb6fc33, type: 3}

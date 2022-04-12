@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3682934937199607941}
   - component: {fileID: 3682934937199607962}
   - component: {fileID: 3682934937199607963}
+  - component: {fileID: 2012673862}
   m_Layer: 6
   m_Name: Enemy_MoveShoot
   m_TagString: Untagged
@@ -129,3 +130,22 @@ MonoBehaviour:
   retreatDistance: 3
   startDelay: 1
   projectile: {fileID: 7251385055696258348, guid: c4ea3511259ce6944a31174ab45b04b3, type: 3}
+--- !u!114 &2012673862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3682934937199607960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0636181067e837741ac92686b9752c83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curHP: 5
+  maxHP: 5
+  attackRange: 0
+  damage: 0
+  attackRate: 0
+  player: {fileID: 0}
+  lootDrop: {fileID: 7199529313164762176, guid: e47f367957e82714db41a8e23bb6fc33, type: 3}
