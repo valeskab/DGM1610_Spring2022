@@ -8,9 +8,11 @@ public class Projectile : MonoBehaviour
     public float speed;
     private Transform player;
     private Vector2 target;
-
-    public int damage;
     private PlayerController pc;
+
+     public int damage;
+
+    
 
 
     // Start is called before the first frame update

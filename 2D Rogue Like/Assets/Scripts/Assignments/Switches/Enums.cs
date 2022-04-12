@@ -81,7 +81,7 @@ public class Enums : MonoBehaviour
         {
             print("Touch some grass bro");
         }
-        else;
+        else
         {
             print("Cool");
         }
