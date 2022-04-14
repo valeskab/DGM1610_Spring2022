@@ -21,7 +21,6 @@ public class Enums : MonoBehaviour
         paint = Color.purple;
 
         print(paint);
-        */
 
         CarMake make;
 
@@ -32,7 +31,6 @@ public class Enums : MonoBehaviour
 
         // print("Car Manufacture:" + make + "Model:" + model);
 
-        /* 
 
         GameCompanies publisher;
         publisher = GameCompanies.Nintendo;
@@ -58,7 +56,7 @@ public class Enums : MonoBehaviour
     {
         if(make == CarMake.Oldsmobile && model == CarModel.Alero)
         {
-            print("THere is a recall on your vehicle due to a faulty ignition, please take your car to the nearest dealer for repairs");
+            print("There is a recall on your vehicle due to a faulty ignition, please take your car to the nearest dealer for repairs");
         }
         else if(make == CarMake.Ford && model == CarModel.Mustang)
         {
@@ -85,6 +83,23 @@ public class Enums : MonoBehaviour
         {
             print("Cool");
         }
+    }
+
+    void Recall(CoffeeShops shops, CoffeeDrinks drinks)
+    {
+        if(shops == CoffeeShops.Beanys && drinks == CoffeeDrinks.Frappe)
+        {
+            print("This drink will boost magic power by 15%!");
+        }
+        else if(shops == CoffeeShops.Starbucks && drinks == CoffeeDrinks.Latte)
+        {
+            print("This drink will cure poison!");
+        }
+        else
+        {
+            print("This drink increases HP by 20%");
+        }
+
     }
 
     
