@@ -101,6 +101,18 @@ public class Enums : MonoBehaviour
         }
 
     }
+    void Recall(Months month, Holidays holiday)
+    {
+        if(month == Months.October && holiday == Holidays.Halloween)
+        {
+            print("You should dress up, It's halloween!");
+        }
+        else if(month == Months.December && holiday == Holidays.Christmas)
+        {
+            print("You will receive a gift from Santa!");
+        }
+
+    }
 
     
 
