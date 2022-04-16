@@ -114,6 +114,19 @@ public class Enums : MonoBehaviour
 
     }
 
+    void Recall(Months month, Seasons season)
+    {
+        if(month == Months.November && season == Seasons.Winter)
+        {
+            print("November is the start of the winter season");
+        }
+        else if(month == Months.March && season == Seasons.Spring)
+        {
+            print("March is the start of spring, at least it should've been");
+        }
+
+    }
+
     
 
 
