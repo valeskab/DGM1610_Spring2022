@@ -5,7 +5,8 @@ using UnityEngine;
 public class Loops : MonoBehaviour
 {
     //public int numEwoks = 0;
-    public int ducksInPond = 99;
+    public int ducksInPond = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,11 +17,11 @@ public class Loops : MonoBehaviour
         }
         */
 
-        while(ducksInPond > 0)
+        while(ducksInPond < 99)
         {
             Debug.Log(ducksInPond);
             Debug.Log("All of the ducks have flown south of the winter");
-            ducksInPond --;
+            ducksInPond ++;
         }
     }
 
