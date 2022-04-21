@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public static PlayerController instance;
     public float moveSpeed;
     private Rigidbody rb;
     private Vector3 moveInput;
@@ -12,7 +13,7 @@ public class PlayerController : MonoBehaviour
 
     public Camera viewCam;
 
-    public GameObject projectileImpact;
+    public GameObject bulletImpact;
     public int currentAmmo;
 
     private void Awake()
@@ -32,17 +33,35 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        moveInput = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")); // Getting keyboard input
-        Vector3 moveH = transform.right * moveInput.x;
-        Vector3 moveV = transform.forward * moveInput.z;
-        rb.velocity = (moveH + moveV) * moveSpeed;
+       moveInput = new Vector3(Input.GetAxis("Horizontal"), 0,Input.GetAxis("Vertical")); // Getting Inputs
+       Vector3 moveH = transform.right * moveInput.x; 
+       Vector3 moveV = transform.forward * moveInput.z;
+       rb.velocity = (moveH + moveV) * moveSpeed;
 
-        mouseInput = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y")) * mouseSensitivity;
-        transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y - mouseInput.x, transform.rotation.eulerAngles.z );
-        
-        if(currentAmmo> 0)
+       mouseInput = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y")) * mouseSensitivity;
+       transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y + mouseInput.x, transform.rotation.eulerAngles.z);
+
+        if(Input.GetMouseButtonDown(0))
         {
-            Ray ray = 
+            if(currentAmmo > 0)
+            {
+                Ray ray = viewCam.ViewportPointToRay(new Vector3(0.5f,0.5f,0f));
+                RaycastHit hit;
+
+                if(Physics.Raycast(ray, out hit))
+                {
+                    Debug.Log("I'm looking at " + hit.transform.name);
+                    Instantiate(bulletImpact, hit.point, transform.rotation);
+                }
+                else
+                {
+                    Debug.Log("I'm not looking at anything!");
+                }
+
+                currentAmmo --;
+
+            }
         }
+      
     }
 }
