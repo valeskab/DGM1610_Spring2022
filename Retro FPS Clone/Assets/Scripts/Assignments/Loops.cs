@@ -11,9 +11,16 @@ public class Loops : MonoBehaviour
     public int numLives = 5;
     public int numFriends = 0;
 
-    */
-    
+
+
     public int ducksInPond = 0;
+    public int chocolatesInBox = 14;
+    public int medKits = 3;
+    public int dollarBills = 0;
+    public int concertTickets = 0;
+
+    */
+
 
     // Start is called before the first frame update
     void Start()
@@ -49,39 +56,46 @@ public class Loops : MonoBehaviour
         
         ////While////
 
-        while(ducksInPond < 99)
+        while(ducksInPond > 0)
         {
             Debug.Log(ducksInPond);
             Debug.Log("All of the ducks have flown south of the winter");
-            ducksInPond ++;
+            ducksInPond --;
         }
 
         while(ducksInPond < 99)
         {
             Debug.Log(ducksInPond);
-            Debug.Log("All of the ducks have flown south of the winter");
+            Debug.Log("All of the ducks have flown back");
             ducksInPond ++;
         }
 
-        while(ducksInPond < 99)
+        while(chocolatesInBox > 0)
         {
-            Debug.Log(ducksInPond);
-            Debug.Log("All of the ducks have flown south of the winter");
-            ducksInPond ++;
+            Debug.Log(chocolatesInBox);
+            Debug.Log("Grandma ate all the chocolates!!");
+            chocolatesInBox --;
         }
 
-        while(ducksInPond < 99)
+        while(medKits > 0)
         {
-            Debug.Log(ducksInPond);
-            Debug.Log("All of the ducks have flown south of the winter");
-            ducksInPond ++;
+            Debug.Log(medKits);
+            Debug.Log("You have ran out of med kits");
+            medKits --;
         }
 
-        while(ducksInPond < 99)
+        while(dollarBills < 99)
         {
-            Debug.Log(ducksInPond);
-            Debug.Log("All of the ducks have flown south of the winter");
-            ducksInPond ++;
+            Debug.Log(dollarBills);
+            Debug.Log("You have obtained your inheritance money!");
+            dollarBills ++;
+        }
+
+        while(concertTickets < 4)
+        {
+            Debug.Log(concertTickets);
+            Debug.Log("You have adquired the concert tickets for you and your party!");
+            concertTickets ++;
         }
         */
 
