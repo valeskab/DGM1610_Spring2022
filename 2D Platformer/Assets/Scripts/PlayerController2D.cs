@@ -23,7 +23,7 @@ public class PlayerController2D : MonoBehaviour
         rb = GetComponent<Rigidbody2D>(); //Loading the rigidbody
     }
 
-    void FixedUpdate() // Fixed uptate = A set number of times
+    void Update() // I was having problems jumping with fixed update, once I put everything back into update my jump became smooth so im leaving it here.
     {
         //Ground check sensor, This is going to make the radius go in a circle to check if the player is touching the ground.
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround); 
