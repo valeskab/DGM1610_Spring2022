@@ -4,10 +4,30 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+     [Header ("Player Health")]
+    public int curHP;
+    public int maxHP;
+
+    public HealthBar healthBar;
+    
+    [Header ("Player Combat")]
+
+    public int damage; // Damage ammount dealt to enemy
+    public float attackRange; // Range at which the player can attack
+    public float attackRate;
+    private float lastAttackTime;
+    public LayerMask enemyLayer;
+     private Vector2 direction;
+
+
     [Header("PlayerStats")]
     public float speed;
     public float jumpHeight;
     private Rigidbody2D rb;
+
+     [Header("Inventory")]
+    public int key;
+    public int coins;
 
     [Header("GroundCheck")]
     private bool isGrounded;
@@ -55,4 +75,35 @@ public class PlayerController : MonoBehaviour
     {
         rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
     }
+
+    
+    void Attack()
+    {
+        lastAttackTime = Time.time;
+        // Raycast using the enemyLayer
+
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, attackRange, enemyLayer);
+
+        if(hit.collider != null)
+        {
+            hit.collider.GetComponent<Enemy>()?.TakeDamage(damage);
+        }
+
+    }
+    public void TakeDamage(int damage)
+    {
+        curHP -= damage;
+        //Updates the health bar using current Health
+        healthBar.SetHealth(curHP);
+
+        if(curHP <= 0)
+        {
+            Die();
+        }
+
+    }
+     void Die()
+        {
+            Debug.Log("Player has been defeated!");
+        }
 }
