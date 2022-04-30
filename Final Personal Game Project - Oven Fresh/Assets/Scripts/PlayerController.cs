@@ -41,6 +41,9 @@ public class PlayerController : MonoBehaviour
     {
         isGrounded = true;
         rb = GetComponent<Rigidbody2D>(); //Loading the rigidbody
+
+        curHP = maxHP;
+        healthBar.SetHealth(maxHP);
     }
 
     void Update()
