@@ -932,7 +932,7 @@ RectTransform:
   m_Children:
   - {fileID: 1692538076}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1115,7 +1115,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &889684761
 GameObject:
@@ -1531,13 +1531,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1212372782}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 55.099373, y: 1.187223, z: 0}
+  m_LocalPosition: {x: 48.76937, y: 0.64, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1964527251}
-  m_Father: {fileID: 1987563074}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1212372785
 MonoBehaviour:
@@ -1610,11 +1610,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1212372782}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6dc623fd506cc4948b2f21eea55ca156, type: 3}
+  m_Script: {fileID: 11500000, guid: 5cf68590b173be546a23dc84f503bd54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  curHP: 3
-  maxHP: 3
+  curHP: 1
+  maxHP: 1
   attackRange: 1
   damage: 1
   attackRate: 1
@@ -1632,7 +1632,7 @@ GameObject:
   - component: {fileID: 1215050138}
   - component: {fileID: 1215050137}
   - component: {fileID: 1215050136}
-  - component: {fileID: 1215050135}
+  - component: {fileID: 1215050140}
   m_Layer: 6
   m_Name: Lava
   m_TagString: Untagged
@@ -1640,25 +1640,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1215050135
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1215050134}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6dc623fd506cc4948b2f21eea55ca156, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  curHP: 10
-  maxHP: 10
-  attackRange: 3
-  damage: 5
-  attackRate: 5
-  player: {fileID: 2073251867}
-  lootDrop: {fileID: 0}
 --- !u!50 &1215050136
 Rigidbody2D:
   serializedVersion: 4
@@ -1771,8 +1752,27 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1215050140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215050134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cf68590b173be546a23dc84f503bd54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curHP: 100
+  maxHP: 100
+  attackRange: 2
+  damage: 5
+  attackRate: 2
+  player: {fileID: 2073251867}
+  lootDrop: {fileID: 0}
 --- !u!1 &1217458687
 GameObject:
   m_ObjectHideFlags: 0
@@ -2812,7 +2812,7 @@ Transform:
   - {fileID: 2125338085}
   - {fileID: 22183220}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1964527250
 GameObject:
@@ -2872,8 +2872,7 @@ Transform:
   m_LocalPosition: {x: 0, y: -0.502, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1212372784}
+  m_Children: []
   m_Father: {fileID: 2073251866}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
