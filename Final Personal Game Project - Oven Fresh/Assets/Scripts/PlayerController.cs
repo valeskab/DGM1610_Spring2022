@@ -72,6 +72,13 @@ public class PlayerController : MonoBehaviour
         {
             Jump();
         }
+
+         if(Input.GetKeyDown(KeyCode.L))
+        {
+            if(Time.time - lastAttackTime >= attackRate)
+              Attack();
+        
+        }
     }
 
     public void Jump()

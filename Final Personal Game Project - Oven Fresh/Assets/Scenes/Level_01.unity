@@ -1464,7 +1464,7 @@ GameObject:
   - component: {fileID: 1212372785}
   - component: {fileID: 1212372787}
   - component: {fileID: 1212372788}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2823,7 +2823,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1964527251}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -3118,12 +3118,12 @@ MonoBehaviour:
   curHP: 5
   maxHP: 5
   healthBar: {fileID: 1692538078}
-  damage: 0
-  attackRange: 0
-  attackRate: 0
+  damage: 3
+  attackRange: 1
+  attackRate: 1
   enemyLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   speed: 5
   jumpHeight: 10
   key: 0
