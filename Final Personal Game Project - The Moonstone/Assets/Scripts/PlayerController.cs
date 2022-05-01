@@ -73,7 +73,7 @@ public class PlayerController : MonoBehaviour
             Jump();
         }
 
-         if(Input.GetKeyDown(KeyCode.L))
+         if(Input.GetKeyDown(KeyCode.LeftShift))
         {
             if(Time.time - lastAttackTime >= attackRate)
               Attack();

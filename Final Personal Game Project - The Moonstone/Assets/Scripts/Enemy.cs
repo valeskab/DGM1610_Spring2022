@@ -5,8 +5,8 @@ using UnityEngine;
 public class Enemy : MonoBehaviour 
 { 
         [Header("Enemy Health")] 
-    public int curHP; 
-    public int maxHP; 
+    public int curHP = 1; 
+    public int maxHP = 1; 
  
     [Header("Enemy Attack")] 
  
@@ -14,18 +14,8 @@ public class Enemy : MonoBehaviour
     public int damage; 
     public float attackRate; 
     private float lastAttackTime; 
-    public PlayerController player; 
+    public PlayerController player;
  
-    [Header("Loot Drop")] 
-    public GameObject lootDrop; 
- 
- 
- 
-    // Start is called before the first frame update 
-    void Start() 
-    { 
-        player = GameObject.Find("Player").GetComponent<PlayerController>(); 
-    } 
  
     // Update is called once per frame 
     void Update() 
@@ -43,7 +33,6 @@ public class Enemy : MonoBehaviour
         if(curHP <= 0) 
         { 
             Die(); 
-            LootDrop(); 
         } 
  
     } 
@@ -55,10 +44,5 @@ public class Enemy : MonoBehaviour
     void Die() 
     { 
         Destroy(gameObject); 
-    } 
- 
-    void LootDrop() 
-    { 
-        Instantiate(lootDrop, transform.position, Quaternion.identity); 
     } 
 }
