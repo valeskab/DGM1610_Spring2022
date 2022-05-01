@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Pickup : MonoBehaviour
 {
-    public enum Pickuptype {Key, Coins, Gems};
+    public enum Pickuptype {Key, Coins, Medkit};
     public Pickuptype currentPickup;
 
     public int pickupAmount;

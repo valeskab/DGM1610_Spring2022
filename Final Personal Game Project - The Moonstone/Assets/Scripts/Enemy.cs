@@ -4,7 +4,7 @@ using UnityEngine;
  
 public class Enemy : MonoBehaviour 
 { 
-        [Header("Enemy Health")] 
+    [Header("Enemy Health")] 
     public int health = 1; 
  
     [Header("Enemy Attack")] 
@@ -14,6 +14,10 @@ public class Enemy : MonoBehaviour
     public float attackRate; 
     private float lastAttackTime; 
     public PlayerController player;
+
+    [Header("Loot Drop")]
+
+    public GameObject lootDrop;
  
  
     // Update is called once per frame 
@@ -31,7 +35,8 @@ public class Enemy : MonoBehaviour
  
         if(health <= 0)
         { 
-            Die(); 
+            Die();
+            LootDrop();
         } 
  
     } 
@@ -43,5 +48,10 @@ public class Enemy : MonoBehaviour
     void Die() 
     { 
         Destroy(gameObject); 
-    } 
+    }
+
+    void LootDrop()
+    {
+        Instantiate(lootDrop, transform.position, Quaternion.identity);
+    }
 }
