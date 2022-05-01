@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
      [Header("Inventory")]
     public int key;
     public int coins;
+    public int moonstone;
 
     [Header("GroundCheck")]
     private bool isGrounded;

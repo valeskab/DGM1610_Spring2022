@@ -18,8 +18,4 @@ public class HealthBar : MonoBehaviour
     {
         slider.value = health;
     }
-
-    public static void AddPoints (int HealthToAdd) {
-		Health += HealthToAdd;
-	}
 }

@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Pickup : MonoBehaviour
 {
-    public enum Pickuptype {Key, Coins, Medkit};
+    public enum Pickuptype {Key, Coins, Moonstone};
     public Pickuptype currentPickup;
 
-    public int pickupAmount = 1;
+    public int pickupAmount = 10;
     
     private PlayerController playerController;
     
@@ -34,13 +34,16 @@ public class Pickup : MonoBehaviour
             {
                 playerController.coins += pickupAmount;
                 Debug.Log("You have picked up" + pickupAmount + "Coins");
-
-                scoreManager.IncreaseScoreText(pickupAmount); // Pickup script talking to the score manager
+                 scoreManager.IncreaseScoreText(pickupAmount); // Pickup script talking to the score manager
+            }
+            else if(currentPickup == Pickuptype.Moonstone)
+            {
+                playerController.moonstone += pickupAmount;
+                Debug.Log("You have picked up" + pickupAmount + "Moonstone");
             }
 
             Destroy(gameObject);
         }
     }
 
-  
 }
