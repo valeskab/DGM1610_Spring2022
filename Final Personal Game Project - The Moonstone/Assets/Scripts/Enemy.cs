@@ -29,7 +29,7 @@ public class Enemy : MonoBehaviour
         } 
     } 
  
-    public void TakeDamage (int damage) 
+    public void TakeDamage (int damage) // Enemy takes damage from the projectiles
     { 
         health -= damage; 
  
@@ -42,8 +42,8 @@ public class Enemy : MonoBehaviour
     } 
     void Attack() 
     { 
-        lastAttackTime = Time.time; 
-        player.TakeDamage(damage); 
+        lastAttackTime = Time.time;
+        player.TakeDamage(damage);  // if the player gets too close to the enemy, player will receive damage
     } 
     void Die() 
     { 

@@ -20,7 +20,7 @@ public class ScoreManager : MonoBehaviour
         score += amount;
         UpdateScoreText();
     }
-    public void UpdateScoreText()
+    public void UpdateScoreText() // Updates the score every time coins are picked up
     {
         scoreText.text = "Score: "+ score;
     }

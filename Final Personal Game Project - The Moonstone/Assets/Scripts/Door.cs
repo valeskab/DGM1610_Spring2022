@@ -14,7 +14,7 @@ public class Door : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.CompareTag("Player") && playerController.key == 1)
+        if(other.CompareTag("Player") && playerController.key == 1) // The Door will open once the player obtains the key
         {
             Debug.Log("You Open the door!");
             Destroy(gameObject);
@@ -22,7 +22,7 @@ public class Door : MonoBehaviour
         }
         else
         {
-            Debug.Log("Door is locked, you need a key");
+            Debug.Log("Door is locked, you need a key"); // No key = Door stays closed
         }
     }
 
