@@ -5,8 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour 
 { 
         [Header("Enemy Health")] 
-    public int curHP = 1; 
-    public int maxHP = 1; 
+    public int health = 1; 
  
     [Header("Enemy Attack")] 
  
@@ -26,11 +25,11 @@ public class Enemy : MonoBehaviour
         } 
     } 
  
-    public void TakeDamage(int damage) 
+    public void TakeDamage (int damage) 
     { 
-        curHP -= damage; 
+        health -= damage; 
  
-        if(curHP <= 0) 
+        if(health <= 0)
         { 
             Die(); 
         } 

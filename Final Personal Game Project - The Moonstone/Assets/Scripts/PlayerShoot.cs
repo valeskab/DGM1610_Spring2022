@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class PlayerShoot : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Transform firePoint;
+    public GameObject projectile;
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(Input.GetKeyDown(KeyCode.RightControl))
+        {
+            Instantiate(projectile,firePoint.position,Quaternion.identity);
+        }
     }
 }

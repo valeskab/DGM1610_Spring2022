@@ -9,15 +9,6 @@ public class PlayerController : MonoBehaviour
     public int maxHP;
 
     public HealthBar healthBar;
-    
-    [Header ("Player Combat")]
-
-    public int damage; // Damage ammount dealt to enemy
-    public float attackRange; // Range at which the player can attack
-    public float attackRate;
-    private float lastAttackTime;
-    public LayerMask enemyLayer;
-     private Vector2 direction;
 
 
     [Header("PlayerStats")]
@@ -72,13 +63,6 @@ public class PlayerController : MonoBehaviour
         {
             Jump();
         }
-
-         if(Input.GetKeyDown(KeyCode.LeftShift))
-        {
-            if(Time.time - lastAttackTime >= attackRate)
-              Attack();
-        
-        }
     }
 
     public void Jump()
@@ -86,20 +70,6 @@ public class PlayerController : MonoBehaviour
         rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
     }
 
-    
-    void Attack()
-    {
-        lastAttackTime = Time.time;
-        // Raycast using the enemyLayer
-
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, attackRange, enemyLayer);
-
-        if(hit.collider != null)
-        {
-            hit.collider.GetComponent<Enemy>()?.TakeDamage(damage);
-        }
-
-    }
     public void TakeDamage(int damage)
     {
         curHP -= damage;
