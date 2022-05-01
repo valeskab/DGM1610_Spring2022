@@ -27,6 +27,10 @@ public class PlayerController : MonoBehaviour
     public LayerMask whatIsGround;
     private float moveVelocity;
 
+
+    public AudioClip marker;
+    private AudioSource source;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +39,8 @@ public class PlayerController : MonoBehaviour
 
         curHP = maxHP;
         healthBar.SetHealth(maxHP);
+
+        source = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -68,6 +74,7 @@ public class PlayerController : MonoBehaviour
     public void Jump()
     {
         rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
+        source.PlayOneShot(marker, 1.0f);
     }
 
     public void TakeDamage(int damage)
@@ -82,8 +89,10 @@ public class PlayerController : MonoBehaviour
         }
 
     }
-     void Die()
-        {
-            Debug.Log("Player has been defeated!");
-        }
+    void Die()
+    {
+        Debug.Log("Player has been defeated!");
+    }
+
+    
 }

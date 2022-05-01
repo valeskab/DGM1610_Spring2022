@@ -7,9 +7,11 @@ public class Pickup : MonoBehaviour
     public enum Pickuptype {Key, Coins, Medkit};
     public Pickuptype currentPickup;
 
-    public int pickupAmount;
+    public int pickupAmount = 1;
     
     private PlayerController playerController;
+    
+    public ScoreManager scoreManager; // A variable to reference the ScoreManager
 
     // Start is called before the first frame update
     void Start()
@@ -32,7 +34,10 @@ public class Pickup : MonoBehaviour
             {
                 playerController.coins += pickupAmount;
                 Debug.Log("You have picked up" + pickupAmount + "Coins");
+
+                scoreManager.IncreaseScoreText(pickupAmount); // Pickup script talking to the score manager
             }
+
             Destroy(gameObject);
         }
     }
