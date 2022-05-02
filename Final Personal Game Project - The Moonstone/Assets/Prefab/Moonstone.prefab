@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2413500286100288864
+--- !u!1 &752040505623725840
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,10 +8,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2413500286100288868}
-  - component: {fileID: 2413500286100288871}
-  - component: {fileID: 2413500286100288870}
-  - component: {fileID: 7048759752453640107}
+  - component: {fileID: 752040505623725844}
+  - component: {fileID: 752040505623725847}
+  - component: {fileID: 752040505623725846}
+  - component: {fileID: 5387299962314178011}
   m_Layer: 0
   m_Name: Moonstone
   m_TagString: Untagged
@@ -19,28 +19,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2413500286100288868
+--- !u!4 &752040505623725844
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2413500286100288864}
+  m_GameObject: {fileID: 752040505623725840}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18.45, y: -1.61, z: 0}
+  m_LocalPosition: {x: -0.17803955, y: -1.5479717, z: 0}
   m_LocalScale: {x: 0.6438363, y: 0.6438363, z: 0.6438363}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &2413500286100288871
+--- !u!212 &752040505623725847
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2413500286100288864}
+  m_GameObject: {fileID: 752040505623725840}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -86,13 +86,13 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &2413500286100288870
+--- !u!61 &752040505623725846
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2413500286100288864}
+  m_GameObject: {fileID: 752040505623725840}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -112,18 +112,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.8828125}
   m_EdgeRadius: 0
---- !u!114 &7048759752453640107
+--- !u!114 &5387299962314178011
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2413500286100288864}
+  m_GameObject: {fileID: 752040505623725840}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a0069f521b4a92d4d8deb102507578c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   currentPickup: 2
-  pickupAmount: 1
+  pickupAmount: 30
   scoreManager: {fileID: 0}
+  coinPickup: {fileID: 0}

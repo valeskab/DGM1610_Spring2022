@@ -5,7 +5,7 @@ using TMPro;
 
 public class ScoreManager : MonoBehaviour
 {
-     public int score; //Keep track of the score
+    public int score; //Keep track of the score
     public TextMeshProUGUI scoreText; // Text object to be modified
 
     // Start is called before the first frame update

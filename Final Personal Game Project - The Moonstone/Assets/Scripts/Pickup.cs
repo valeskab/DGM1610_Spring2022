@@ -37,9 +37,8 @@ public class Pickup : MonoBehaviour
             }
             else if(currentPickup == Pickuptype.Coins)
             {
-                playerController.coins += pickupAmount;
-
                 source.PlayOneShot(coinPickup, 1.0f);
+                playerController.coins += pickupAmount;
                 Debug.Log("You have picked up" + pickupAmount + " Coins");
 
                 scoreManager.IncreaseScoreText(pickupAmount); // Pickup script talking to the score manager

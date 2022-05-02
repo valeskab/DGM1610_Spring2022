@@ -5,7 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour 
 { 
     [Header("Enemy Health")] 
-    public int health = 1; 
+    public int health; 
  
     [Header("Enemy Attack")] 
  
@@ -47,7 +47,7 @@ public class Enemy : MonoBehaviour
     } 
     void Die() 
     { 
-        Destroy(gameObject); 
+        Destroy(gameObject);
     }
 
     void LootDrop()
