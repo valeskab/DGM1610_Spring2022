@@ -28,6 +28,9 @@ public class PlayerController : MonoBehaviour
     public LayerMask whatIsGround;
     private float moveVelocity;
 
+    private Vector3 respawnPoint;
+    public GameObject fallDetector;
+
 
     public AudioClip marker;
     private AudioSource source;
@@ -42,6 +45,8 @@ public class PlayerController : MonoBehaviour
         healthBar.SetHealth(maxHP);
 
         source = GetComponent<AudioSource>();
+
+        respawnPoint = transform.position; //store position of player before first frame
     }
 
     void Update()
@@ -69,6 +74,17 @@ public class PlayerController : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             Jump();
+        }
+
+        fallDetector.transform.position = new Vector2(transform.position.x, fallDetector.transform.position.y);
+
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag == "FallDetector") // Detecting when the player is passing thru the Fall detector
+        {
+            transform.position = respawnPoint; // Change position to respawn point
         }
     }
 
