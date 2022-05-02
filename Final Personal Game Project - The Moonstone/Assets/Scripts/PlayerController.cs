@@ -109,6 +109,7 @@ public class PlayerController : MonoBehaviour
     void Die()
     {
         Debug.Log("Player has been defeated!");
+        transform.position = respawnPoint; // Change position to respawn point
     }
 
     

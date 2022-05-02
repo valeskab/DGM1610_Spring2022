@@ -13,10 +13,15 @@ public class Pickup : MonoBehaviour
     
     public ScoreManager scoreManager; // A variable to reference the ScoreManager
 
+    private AudioSource source;
+    public AudioClip coinPickup;
+
     // Start is called before the first frame update
     void Start()
     {
         playerController = GameObject.Find("Player").GetComponent<PlayerController>();
+
+        source = GetComponent<AudioSource>();
     }
 
 
@@ -33,8 +38,11 @@ public class Pickup : MonoBehaviour
             else if(currentPickup == Pickuptype.Coins)
             {
                 playerController.coins += pickupAmount;
-                Debug.Log("You have picked up" + pickupAmount + "Coins");
-                 scoreManager.IncreaseScoreText(pickupAmount); // Pickup script talking to the score manager
+
+                source.PlayOneShot(coinPickup, 1.0f);
+                Debug.Log("You have picked up" + pickupAmount + " Coins");
+
+                scoreManager.IncreaseScoreText(pickupAmount); // Pickup script talking to the score manager
             }
             else if(currentPickup == Pickuptype.Moonstone)
             {
